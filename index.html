@@ -23,6 +23,12 @@
   <body>
     <header>
       <div class="container">
+        <svg width="45" height="35">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+        <svg width="22" height="22">
+          <use href="./images/icons.svg#icon-call-us"></use>
+        </svg>
         <a class="logo" href="./index.html"></a>
         <button
           type="button"
@@ -30,25 +36,25 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg class="toggle-btn__icon" width="24" height="16">
-            <use href="./images/icons.svg#icon-menu_24px"></use>
+          <svg class="toggle-btn__icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-Burger"></use>
           </svg>
         </button>
-        <ul class="menu">
-          <li>
-            <a class="menu__link" href="./index.html">Anemone</a>
+        <ul class="nav">
+          <li class="nav__item">
+            <a class="nav__link" href="./index.html">Anemone</a>
           </li>
-          <li>
-            <a class="menu__link" href="./index.html">About us</a>
+          <li class="nav__item">
+            <a class="nav__link" href="./index.html">About us</a>
           </li>
-          <li>
-            <a class="menu__link" href="./index.html">Store</a>
+          <li class="nav__item">
+            <a class="nav__link" href="./index.html">Store</a>
           </li>
-          <li>
-            <a class="menu__link" href="./index.html">Delivery</a>
+          <li class="nav__item">
+            <a class="nav__link" href="./index.html">Delivery</a>
           </li>
-          <li>
-            <a class="menu__link" href="./index.html">Blog</a>
+          <li class="nav__item">
+            <a class="nav__link" href="./index.html">Blog</a>
           </li>
         </ul>
         <ul class="menu menu--phone">
@@ -77,32 +83,38 @@
           </p>
         </div>
       </section>
-      <!--2ga sekcja Store-->
+      <!--3cia sekcja Store-->
       <section class="section">
-        <h2>store</h2>
-        <button type="button">order flowers</button>
+        <div class="container">
+          <h2>store</h2>
+          <button type="button">order flowers</button>
+        </div>
       </section>
-      <!--2ga sekcja Delivery-->
+      <!--4ta sekcja Delivery-->
       <section class="section">
-        <h2>delivery</h2>
-        <ul class="list">
-          <li>Choose your bouquet and make an order on website</li>
-          <li>
-            Wait for the call to clarify the details of the order. You can pay online or to the
-            courier
-          </li>
-          <li>Wait for the delivery at the selected time or pick up the order from the store</li>
-          <li>Make someone happy or enjoy yourself</li>
-        </ul>
+        <div class="container">
+          <h2>delivery</h2>
+          <ul class="list">
+            <li>Choose your bouquet and make an order on website</li>
+            <li>
+              Wait for the call to clarify the details of the order. You can pay online or to the
+              courier
+            </li>
+            <li>Wait for the delivery at the selected time or pick up the order from the store</li>
+            <li>Make someone happy or enjoy yourself</li>
+          </ul>
+        </div>
       </section>
       <section class="section">
-        <h2>blog</h2>
-        <p>Follow to our newsletter</p>
-        <button type="submit">Subscribe</button>
+        <div class="container">
+          <h2>blog</h2>
+          <p>Follow to our newsletter</p>
+          <button type="submit">Subscribe</button>
+        </div>
       </section>
     </main>
     <footer>
-      <div>
+      <div class="container">
         <div>
           <h4>Navigation</h4>
           <ul>
@@ -135,6 +147,21 @@
         </div>
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="menu-container__close-btn js-close-menu">
+        <svg class="menu-container__icon-btn" width="24" height="24">
+          <use href="./images/icons.svg#icon-close_24px"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li>Anemone</li>
+        <li>About us</li>
+        <li>Store</li>
+        <li>Delivery</li>
+        <li>Blog</li>
+      </ul>
+    </div>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

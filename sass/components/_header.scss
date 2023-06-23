@@ -1,0 +1,35 @@
+.nav {
+    display: none;
+
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        gap:24px;
+        
+}
+}
+.container--header {
+    display: flex;
+    margin-top: 24px;
+}
+.toggle-btn {
+    background-color: transparent;
+    border:none;
+    align-content: end;
+   
+    @include tablet {
+      display:none
+    }
+    &__icon {
+      fill: $brandColor;
+      
+      &:hover,
+      &:focus {
+        color: $themeColor;
+        fill: $themeColor;
+      }
+    }
+  }
+  

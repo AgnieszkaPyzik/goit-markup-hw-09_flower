@@ -1,0 +1,52 @@
+.store {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-basis: calc((100% - 30px) / 2);
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+  
+   &__item {
+    width: 136px;
+    height: 208px;
+    margin-bottom: 15px;
+    
+     @include tablet {
+      width: 344px;
+      height: 491px;
+     }
+     @include desktop {
+      width: 600px;
+      height: 640px;
+     }
+   }
+   &__name {
+    font-weight: 500;
+    line-height: 1.2;
+    padding-top: 30px;
+  }
+  &__price {
+    line-height: 1.2;
+    padding-top: 10px;
+    padding-bottom: 16px;
+  }
+}
+.store-button {
+     margin-top: 30px;
+     background-color: $pinkColor;
+     font-size: 20px;
+     border-radius: 38px;
+     border: none;
+     &:first-letter {
+        text-transform: uppercase;}
+    
+     color: $lightColor;
+     padding: 14px 28px;
+
+     @include tablet {
+        padding: 16px 32px;
+        font-weight: 500;
+        font-size: 28px;
+     }
+    }

@@ -2,7 +2,7 @@
     transform: translateX(0);
 }
 .menu-container {
-    background-color:pink;
+    background-color: $pinkColor;
     font-family: $fontPrimary;
     position: fixed;
     inset: 0;
@@ -14,7 +14,7 @@
     transition: transform 250ms ease;
     &__close-btn {
         position: absolute;
-        background-color: pink;
+        background-color: $pinkColor;
         border: none;
         top: 21px;
         right: 21px;

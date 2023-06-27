@@ -67,8 +67,25 @@
     <main>
       <!--1wsza sekcja Anemone-->
       <section class="section">
-        <div class="container">
-          <p>flower studio</p>
+        <div class="container container--flower-home">
+          <div class="main-flower">
+          <p class="main-flower__name">flower studio</p>
+          <img clss="main-flower__picture"
+            src="images/flower-home390.jpg"
+            alt="obraz startowy"
+            srcset="
+                  images/flower-home145.jpg       145w;
+                  images/flower-home145@2.jpg     290w;
+                  images/flower-home390.jpg       390w;
+                  images/flower-home390@2.jpg     780w;
+               
+                "
+            sizes="(min-width: 768px) 390px, (min-width: 1280px) 390px, 100vw"
+          />
+          <svg class="main-flower__icon" width="64" height="76">
+            <use href="./images/icons.svg#icon-btn"></use>
+          </svg>
+          </div>
           <h1>anemone</h1>
         </div>
       </section>
@@ -81,13 +98,115 @@
             give people the beauty and joy creating stylish and modern masterpieces. Every bouquet
             we create is unique as you are.
           </p>
+          <img clss="main-flower__picture"
+            src="images/flower-home390.jpg"
+            alt="obraz startowy"
+            srcset="
+                  images/flower-home145.jpg       145w;
+                  images/flower-home145@2.jpg     290w;
+                  images/flower-home390.jpg       390w;
+                  images/flower-home390@2.jpg     780w;
+               
+                "
+            sizes="(min-width: 768px) 390px, (min-width: 1280px) 390px, 100vw"
+          />
         </div>
       </section>
       <!--3cia sekcja Store-->
       <section class="section">
         <div class="container">
           <h2>store</h2>
-          <button type="button">order flowers</button>
+          <ul class="store">
+            <li>
+              <figure class="store__item">
+                <img
+                  src="images/store/compliment600.jpg"
+                  alt="bukiet podstawowy"
+                  srcset="
+                  images/store/compliments136.jpg   136w;
+                  images/store/compliments136@2.jpg 272w;
+                  images/store/compliments344.jpg   344w;
+                  images/store/compliments344@2.jpg 688w;
+                  images/store/compliment600.jpg    600w;
+                  images/store/compliment600@2.jpg 1200w;
+               
+                "
+                  sizes="(min-width: 768px) 344px, (min-width: 1280px) 600px, 100vw"
+                />
+                <figcaption>
+                  <h3 class="store__name">compliments</h3>
+                  <p class="store__price">from $15</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="store__item">
+                <img
+                  src="images/store/bouquetS600.jpg"
+                  alt="bukiet podstawowy"
+                  srcset="
+                  images/store/bouquetS136.jpg   136w;
+                  images/store/bouquetS136@2.jpg 272w;
+                  images/store/bouquetS344.jpg   344w;
+                  images/store/bouquetS344@2.jpg 688w;
+                  images/store/bouquetS600.jpg    600w;
+                  images/store/bouquetS600@2.jpg 1200w;
+               
+                "
+                  sizes="(min-width: 768px) 344px, (min-width: 1280px) 600px, 100vw"
+                />
+                <figcaption>
+                  <h3 class="store__name">bouquets size S</h3>
+                  <p class="store__price">from $25</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="store__item">
+                <img
+                  src="images/store/bouquetM600.jpg"
+                  alt="bukiet podstawowy"
+                  srcset="
+                  images/store/bouquetM136.jpg   136w;
+                  images/store/bouquetM136@2.jpg 272w;
+                  images/store/bouquetM344.jpg   344w;
+                  images/store/bouquetM344@2.jpg 688w;
+                  images/store/bouquetM600.jpg    600w;
+                  images/store/bouquetM600@2.jpg 1200w;
+               
+                "
+                  sizes="(min-width: 768px) 344px, (min-width: 1280px) 600px, 100vw"
+                />
+                <figcaption>
+                  <h3 class="store__name">bouquets size M</h3>
+                  <p class="store__price">from $45</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure class="store__item">
+                <img
+                  src="images/store/bouquetL600.jpg"
+                  alt="bukiet podstawowy"
+                  srcset="
+                  images/store/bouquetL136.jpg   136w;
+                  images/store/bouquetL136@2.jpg 272w;
+                  images/store/bouquetL344.jpg   344w;
+                  images/store/bouquetL344@2.jpg 688w;
+                  images/store/bouquetL600.jpg    600w;
+                  images/store/bouquetL600@2.jpg 1200w;
+               
+                "
+                  sizes="(min-width: 768px) 344px, (min-width: 1280px) 600px, 100vw"
+                />
+                <figcaption>
+                  <h3 class="store__name">bouquets size M</h3>
+                  <p class="store__price">from $60</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+          <button class="store-button" type="button">order flowers</button>
         </div>
       </section>
       <!--4ta sekcja Delivery-->
@@ -109,7 +228,7 @@
         <div class="container">
           <h2>blog</h2>
           <p>Follow to our newsletter</p>
-          <button type="submit">Subscribe</button>
+          <button class="button-blog" type="submit">Subscribe</button>
         </div>
       </section>
     </main>

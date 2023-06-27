@@ -26,7 +26,7 @@
     }
 
     @include desktop {
-        max-width: 1200px;
+        max-width: 1280px;
     }
 }
 ul {
@@ -44,28 +44,50 @@ ul {
     letter-spacing: 0.03em;
   }
   h1 {
-    font-weight: 900;
-    font-size: 26px;
+    font-weight: 400;
+    font-size: 52px;
     line-height: 1.4;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: $lightColor;
+    color: $brandColor;
+
+    @include tablet {
+      font-size: 120px;
+    }
 
     @include desktop {
-      font-size: 44px;
+      font-size: 160px;
     }
   }
+ h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-bottom: 30px;
 
+  @include tablet {
+    font-size: 44px;
+  }
+ }
   h3 {
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 14px;
     color: $brandColor;
     line-height: 2;
     letter-spacing: 0.06em;
+
+    @include tablet {
+      font-size: 32px;
+    }
+    @include desktop{
+      font-size: 36px
+    }
   }
   h4 {
-    color: $lightColor;
+    color:$brandColor;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;
@@ -73,7 +95,39 @@ ul {
   }
   p {
     line-height: 1.9;
+    font-size: 12px;
     color: $pharagraphColor;
+
+    @include tablet {
+      font-size: 24px;
+    }
+
+    @include desktop {
+      font-size: 28px;
+    }
+  }
+  .main-flower {
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    &__picture {
+      height: 274px;
+
+      @include tablet {
+      width: 390px;
+      height: 636px;
+      }
+      &__icon {
+        width: 64px;
+        height: 76px;
+
+      @include tablet {
+        width: 145px;
+        height: 150px;
+      }
+      }
+    }
   }
   footer {
     background-color: $footerColor;

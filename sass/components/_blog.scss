@@ -16,3 +16,16 @@
        font-size: 28px;
     }
    }
+   .blog {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+
+      &__item--red {
+         display: none;
+
+         @include tablet {
+            display: none;
+         }
+      }
+   }

@@ -28,7 +28,13 @@
     @include desktop {
         max-width: 1280px;
     }
+  
 }
+.container--footer {
+  padding-top: 15px;
+  color: $lightColor;
+}
+
 ul {
     list-style: none;
   }
@@ -87,29 +93,28 @@ ul {
     }
   }
   h4 {
-    color:$brandColor;
+    color:$lightColor;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.1;
     letter-spacing: 0.03em;
+    padding: 30px 0;
   }
+
   p {
     line-height: 1.9;
-    font-size: 12px;
-    color: $pharagraphColor;
+    font-size: 18px;
+    color: $brandColor;
 
     @include tablet {
-      font-size: 24px;
+      font-size: 32px;
     }
 
-    @include desktop {
-      font-size: 28px;
-    }
   }
   .main-flower {
     display: inline-flex;
     flex-direction: row;
-    text-align: center;
+    align-items: center;
     justify-content: center;
     &__picture {
       height: 274px;
@@ -121,10 +126,15 @@ ul {
       &__icon {
         width: 64px;
         height: 76px;
+    
 
       @include tablet {
         width: 145px;
         height: 150px;
+      }
+      @include desktop {
+        width: 166px;
+        height: 166px;
       }
       }
     }

@@ -21,11 +21,14 @@
       flex-direction: row;
       gap: 30px;
 
-      &__item--red {
+      &__item--blue {
          display: none;
 
          @include tablet {
             display: none;
+         }
+         @include desktop {
+            display: initial;
          }
       }
    }

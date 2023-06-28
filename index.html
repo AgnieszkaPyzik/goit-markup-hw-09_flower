@@ -83,7 +83,7 @@
                 "
               sizes="(min-width: 768px) 390px, (min-width: 1280px) 390px, 100vw"
             />
-            <svg class="main-flower__icon" width="64" height="76">
+            <svg class="main-flower__icon" width="166" height="166">
               <use href="./images/icons.svg#icon-btn"></use>
             </svg>
           </div>
@@ -216,15 +216,17 @@
       <section class="section">
         <div class="container">
           <h2>delivery</h2>
-          <ul class="list">
-            <li>Choose your bouquet and make an order on website</li>
-            <li>
+          <ol class="list">
+            <li class="list__number">Choose your bouquet and make an order on website</li>
+            <li class="list__number">
               Wait for the call to clarify the details of the order. You can pay online or to the
               courier
             </li>
-            <li>Wait for the delivery at the selected time or pick up the order from the store</li>
-            <li>Make someone happy or enjoy yourself</li>
-          </ul>
+            <li class="list__number">
+              Wait for the delivery at the selected time or pick up the order from the store
+            </li>
+            <li class="list__number">Make someone happy or enjoy yourself</li>
+          </ol>
           <img
             src="images/delivery/image-delivery320.jpg"
             alt="bukiet dostawa"
@@ -301,7 +303,7 @@
       </section>
     </main>
     <footer>
-      <div class="container">
+      <div class="container container--footer">
         <div>
           <h4>Navigation</h4>
           <ul>
@@ -320,10 +322,10 @@
         </div>
         <div>
           <h4>Contacts</h4>
-          <ul>
-            <li><a href="tel:+380631234567">+38 063 123 45 67</a></li>
+          <ul class="contacts">
+            <li><a class="contacts__phone" href="tel:+380631234567">+38 063 123 45 67</a></li>
             <li>
-              <a href="anemonestudio@example.com">anemonestudio@example.com</a>
+              <a class="contacts__email" href="anemonestudio@example.com">anemonestudio@example.com</a>
             </li>
             <li>
               <a class="footer__maps" href="https://goo.gl/maps/SGYe3pkshkVERvNPA" target="_blank"

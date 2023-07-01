@@ -1,0 +1,37 @@
+.container--footer {
+    display: flex;
+    column-gap: 45px;
+   
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+       gap: 150px;
+        margin: 0 auto;
+    }
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    
+    &__list {
+    padding-bottom: 15px;
+    font-family: $fontPrimary;
+    font-weight: 500px;
+    font-size: 16px;
+    color: $lightColor;
+  &--link {
+    color: $lightColor;
+  }
+}
+}
+
+.logo--footer {
+    display: none;
+
+    @include desktop {
+    display: contents;
+    padding-top: 30px;    
+    margin-left: 210px;
+    fill: $lightColor;
+    }
+}

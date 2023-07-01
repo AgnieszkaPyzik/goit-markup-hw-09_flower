@@ -83,7 +83,7 @@
                 "
               sizes="(min-width: 768px) 390px, (min-width: 1280px) 390px, 100vw"
             />
-            <svg class="main-flower__icon" width="166" height="166">
+            <svg class="main-flower__icon" width="64" height="76">
               <use href="./images/icons.svg#icon-btn"></use>
             </svg>
           </div>
@@ -304,13 +304,18 @@
     </main>
     <footer>
       <div class="container container--footer">
+        <div class="logo logo--footer">
+          <svg width="73" height="57">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </div>
         <div>
           <h4>Navigation</h4>
-          <ul>
-            <li>anemone</li>
-            <li>about us</li>
-            <li>store</li>
-            <li>delivery</li>
+          <ul class="navigation">
+            <li class="navigation__list">Anemone</li>
+            <li class="navigation__list">About us</li>
+            <li class="navigation__list">Store</li>
+            <li class="navigation__list">Delivery</li>
           </ul>
         </div>
         <div>
@@ -320,16 +325,27 @@
             <li>09:00 - 22:00</li>
           </ul>
         </div>
+
         <div>
           <h4>Contacts</h4>
-          <ul class="contacts">
-            <li><a class="contacts__phone" href="tel:+380631234567">+38 063 123 45 67</a></li>
-            <li>
-              <a class="contacts__email" href="anemonestudio@example.com">anemonestudio@example.com</a>
+          <ul class="navigation">
+            <li class="navigation__list">
+              <a class="navigation__list navigation__list--link" href="tel:+380631234567"
+                >+38 063 123 45 67</a
+              >
             </li>
-            <li>
-              <a class="footer__maps" href="https://goo.gl/maps/SGYe3pkshkVERvNPA" target="_blank"
-                >Reitarska Street, 11 Kyiv, Ukraine</a
+            <li class="navigation__list">
+              <a class="navigation__list navigation__list--link" href="anemonestudio@example.com"
+                >anemonestudio@example.com</a
+              >
+            </li>
+            <li class="navigation__list">
+              <a
+                class="navigation__list navigation__list--link"
+                href="https://goo.gl/maps/SGYe3pkshkVERvNPA"
+                target="_blank"
+                >Reitarska Street, 11 <br />
+                Kyiv, Ukraine</a
               >
             </li>
           </ul>

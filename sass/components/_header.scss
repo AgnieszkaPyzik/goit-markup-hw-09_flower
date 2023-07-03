@@ -1,18 +1,24 @@
 .nav {
     display: none;
 
+
     @include tablet {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         text-align: center;
-        gap:24px;
-        
+        gap: 24px;
+
+    &__item {
+      text-decoration: none;
+      color: $brandColor;
+    }    
 }
 }
 .container--header {
     display: flex;
     margin-top: 24px;
+    justify-content: space-between;
 }
 .toggle-btn {
     background-color: transparent;
@@ -32,4 +38,10 @@
       }
     }
   }
-  
+  .menu--phone {
+    display: none;
+
+    @include tablet {
+      display: flex;
+    }
+  }

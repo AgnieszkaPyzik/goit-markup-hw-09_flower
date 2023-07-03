@@ -4,13 +4,19 @@
     align-items: center;
     align-content: center;
     justify-content: space-between;
-    gap: 15px;
-    flex-basis: calc((100% - 30px) / 3);
-    margin: 0 auto;
+    gap: 5px;
+    flex-basis: calc((100% - 10px) / 3);
+    
+
+    @include tablet {
+      gap:  15px;
+      margin: 0 auto;
+     
+    }
 
     &__picture {
-      height: 274px;
 
+      
       @include tablet {
       width: 390px;
       height: 636px;
@@ -18,14 +24,17 @@
     }
     
     &__icon {
-      
+
+      width: 64px;
+      height: 76px;
+  
     @include tablet {
         width: 145px;
         height: 150px;
       }
-    @include desktop {
-        width: 166px;
-        height: 166px;
-      }
+      @include desktop {
+       width: 166px;
+       height: 166px;
       }
     }
+  }
